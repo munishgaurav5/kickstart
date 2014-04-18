@@ -6,13 +6,13 @@ repo --name=epel --baseurl=http://download.fedoraproject.org/pub/epel/6/x86_64/
 repo --name=updates --baseurl=http://ftp.astral.ro/distros/centos/6.5/updates/x86_64/
 lang en_US.UTF-8
 keyboard us
+network --onboot=yes --device=eth0 --bootproto=static --ip=192.168.50.80 --netmask=255.255.255.0 --gateway=192.168.50.1 --nameserver=192.168.50.1 --noipv6 --hostname=grapher.atomiclab.local
 firewall --disabled
 authconfig --enableshadow --passalgo=sha512
 selinux --disabled
 timezone --utc America/New_York
 rootpw  --isencrypted one234
 selinux --disabled
-network --onboot yes --device eth0 --bootproto dhcp --noipv6 --hostname=graphs.atomiclab.local
 zerombr
 clearpart --all --initlabel
 bootloader --location=mbr --driveorder=xvda --append=" rhgb crashkernel=auto console=hvc0 quiet"
