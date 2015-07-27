@@ -15,7 +15,7 @@
 #   limitations under the License.
 #
 install
-url --url=http://mirrors.kernel.org/centos/6/os/x86_64/
+url --url=http://mirrors.kernel.org/centos/7/os/x86_64/
 text
 lang en_US.UTF-8
 keyboard us
@@ -80,6 +80,7 @@ postfix                     # CIS 3.16
 rsyslog                     # CIS 5.1.2
 cronie-anacron              # CIS 6.1.1
 pam_passwdqc                # CIS 6.3.3
+%end
 
 %post --log=/root/postinstall.log
 
