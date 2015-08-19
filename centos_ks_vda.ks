@@ -15,7 +15,7 @@
 #   limitations under the License.
 #
 install
-url --url=http://mirrors.kernel.org/centos/7/os/x86_64/
+url --url=http://mirror.umd.edu/centos/7/os/x86_64/
 text
 lang en_US.UTF-8
 keyboard us
@@ -31,7 +31,7 @@ authconfig --enableshadow --passalgo=sha512
 # CIS 1.4.2-1.4.3 (targeted is enabled by default w/enforcing)
 selinux --enforcing
 
-timezone --utc America/Chicago
+timezone --utc America/New_York
 services --enabled network,sshd
 zerombr
 
