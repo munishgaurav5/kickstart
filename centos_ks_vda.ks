@@ -73,13 +73,13 @@ selinux-policy-targeted     # CIS 1.4.3
 -tftp-server                # CIS 2.1.8
 -talk-server                # CIS 2.1.10
 -xinetd                     # CIS 2.1.11
--@"X Window System"         # CIS 3.2
+#-@"X Window System"         # CIS 3.2
 -dhcp                       # CIS 3.5
 ntp                         # CIS 3.6
 postfix                     # CIS 3.16
 rsyslog                     # CIS 5.1.2
 cronie-anacron              # CIS 6.1.1
-pam_passwdqc                # CIS 6.3.3
+#pam_passwdqc                # CIS 6.3.3
 
 %end
 
