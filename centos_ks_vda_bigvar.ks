@@ -34,7 +34,7 @@ logvol /tmp --vgname vg_root --name tmp --size=500 --fsoptions="nodev,nosuid,noe
 # CIS 1.1.9-1.1.0
 logvol /home --vgname vg_root --name home --size=1024 --fsoptions="nodev"
 # CIS 1.1.5
-logvol /var --vgname vg_root --name var --size=1000
+logvol /var --vgname vg_root --name var --size=10240
 # CIS 1.1.7
 logvol /var/log --vgname vg_root --name log --size=1024
 # CIS 1.1.8
